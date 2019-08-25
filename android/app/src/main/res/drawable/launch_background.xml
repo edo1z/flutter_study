@@ -9,4 +9,14 @@
             android:gravity="center"
             android:src="@mipmap/launch_image" />
     </item> -->
+
+    <item
+        android:drawable="@color/background"/>
+
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:drawable="@mipmap/go"
+        android:gravity="center"/>
+
 </layer-list>
