@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hoge/pages/hoge.dart';
+import 'package:hoge/pages/menu_list.dart';
 import 'package:hoge/pages/hello.dart';
 
 class Hello extends StatefulWidget {
@@ -40,9 +40,9 @@ class _HelloState extends State<Hello> with SingleTickerProviderStateMixin {
       body: TabBarView(
           controller: _tabController,
           children: <Widget>[
-            HogeScreen(),
             HelloScreen(),
-            HogeScreen(),
+            MenuListScreen(),
+            HelloScreen(),
           ]
       )
     );
