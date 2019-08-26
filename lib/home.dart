@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hoge/pages/menu_list.dart';
 import 'package:hoge/pages/hello.dart';
+import 'package:hoge/pages/map.dart';
 
 class Hello extends StatefulWidget {
   @override
@@ -33,7 +34,7 @@ class _HelloState extends State<Hello> with SingleTickerProviderStateMixin {
           tabs: <Widget>[
             Tab(icon: new Icon(Icons.camera_alt)),
             Tab(text: '一覧'),
-            Tab(text: '設定'),
+            Tab(text: '地図'),
           ]
         )
       ),
@@ -42,7 +43,7 @@ class _HelloState extends State<Hello> with SingleTickerProviderStateMixin {
           children: <Widget>[
             HelloScreen(),
             MenuListScreen(),
-            HelloScreen(),
+            MapsDemo(),
           ]
       )
     );
