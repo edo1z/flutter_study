@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hoge/pages/menu_list.dart';
-import 'package:hoge/pages/hello.dart';
+import 'package:hoge/pages/camera.dart';
 import 'package:hoge/pages/map.dart';
 
-class Hello extends StatefulWidget {
+class Home extends StatefulWidget {
   @override
-  _HelloState createState() => _HelloState();
+  _HomeState createState() => _HomeState();
 }
 
-class _HelloState extends State<Hello> with SingleTickerProviderStateMixin {
+class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   TabController _tabController;
 
   @override
@@ -41,7 +41,7 @@ class _HelloState extends State<Hello> with SingleTickerProviderStateMixin {
       body: TabBarView(
           controller: _tabController,
           children: <Widget>[
-            HelloScreen(),
+            CameraScreen(),
             MenuListScreen(),
             MapsDemo(),
           ]

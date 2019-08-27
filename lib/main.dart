@@ -1,13 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:hoge/home.dart';
 
-void main() => runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'TEST?',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-        accentColor: new Color(0xff006699)
-      ),
-      home: Hello(),
-    ));
+void main() async {
+  runApp(MyApp());
+}
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          primaryColor: Colors.blue,
+          accentColor: new Color(0xff006699)
+      ),
+      home: Home(),
+    );
+  }
+}
